@@ -42,7 +42,7 @@ class BinaryTree:
 
     def mostrar_arvore(self, node, nivel=0, lado="Raiz"):
         if node is not None:
-            print("  " * nivel + f"{lado}: {no.valor}")
+            print("  " * nivel + f"{lado}: {node.value}")
             self.mostrar_arvore(node.left, nivel + 1, "Esq")
             self.mostrar_arvore(node.right, nivel + 1, "Dir")
 
